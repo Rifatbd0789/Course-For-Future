@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "courseName": "Introduction to Programming",
     "creditValue": 6,
     "priceValue": 199.99,
@@ -7,13 +8,15 @@
     "imageLink": "https://i.ibb.co/b2wQN09/Rectangle-2-2.png"
   },
   {
+    "id": "2",
     "courseName": "Data Science for Beginners",
     "creditValue": 7,
     "priceValue": 249.99,
-    "courseDetails": "Explore the world of data science with this introductory course. Learn about data analysis, visualization, and basic machine learning.",
+    "courseDetails": "Explore the world of data science with this introductory course. Learn about data analysis, visualization, and basic learning.",
     "imageLink": "https://i.ibb.co/Xk40nvH/Rectangle-3.png"
   },
   {
+    "id": "3",
     "courseName": "Web Development Boot camp",
     "creditValue": 10,
     "priceValue": 299.99,
@@ -21,6 +24,7 @@
     "imageLink": "https://i.ibb.co/4KMMF6K/Rectangle-3-1.png"
   },
   {
+    "id": "4",
     "courseName": "Advanced Machine Learning",
     "creditValue": 5,
     "priceValue": 349.99,
@@ -28,6 +32,7 @@
     "imageLink": "https://i.ibb.co/SPnJ5yq/Rectangle-2.png"
   },
   {
+    "id": "5",
     "courseName": "Business Finance Essentials",
     "creditValue": 8,
     "priceValue": 199.99,
@@ -35,6 +40,7 @@
     "imageLink": "https://i.ibb.co/cX1SQLr/Rectangle-2-6.png"
   },
   {
+    "id": "6",
     "courseName": "Digital Marketing Mastery",
     "creditValue": 2,
     "priceValue": 249.99,
@@ -42,6 +48,7 @@
     "imageLink": "https://i.ibb.co/Vjb7s4C/Rectangle-2-4.png"
   },
   {
+    "id": "7",
     "courseName": "Artificial Intelligence Ethics",
     "creditValue": 5,
     "priceValue": 149.99,
@@ -49,13 +56,15 @@
     "imageLink": "https://i.ibb.co/SBTTw2y/Rectangle-2-3.png"
   },
   {
-    "courseName": "Graphic Design Fundamentals",
+    "id": "8",
+    "courseName": "Graphic Design",
     "creditValue": 6,
     "priceValue": 149.99,
     "courseDetails": "Get started with graphic design. Learn about design principles, software tools, and create your own projects.",
     "imageLink": "https://i.ibb.co/7vCrH37/Rectangle-2-5.png"
   },
   {
+    "id": "9",
     "courseName": "Business Management",
     "creditValue": 2,
     "priceValue": 199.99,

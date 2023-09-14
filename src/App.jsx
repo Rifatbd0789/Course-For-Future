@@ -8,6 +8,12 @@ import Cart from "./components/Cart";
 function App() {
   // console.log(info.length);
   const [infos, setinfo] = useState([]);
+  const [clicked, setclicked] = useState([]);
+
+  const selectedBtn = (selected) => {
+    const newClicked = [...clicked, selected];
+    setclicked(newClicked);
+  };
 
   useEffect(() => {
     fetch("./data.json")
@@ -20,14 +26,14 @@ function App() {
         Course Registration
       </h1>
       <hr />
-      <div className="flex gap-10 justify-center mt-10 mx-12">
-        <div className="grid grid-cols-3 gap-10 mb-16">
+      <div className="flex justify-between mx-6 mt-10">
+        <div className="grid grid-cols-3 gap-8 mb-16 max-w-4xl">
           {infos.map((info) => (
-            <Card key={info.creditValue} info={info}></Card>
+            <Card key={info.id} info={info} selectedBtn={selectedBtn}></Card>
           ))}
         </div>
         <div className="text-4xl">
-          <Cart></Cart>
+          <Cart clicked={clicked}></Cart>
         </div>
       </div>
     </>
