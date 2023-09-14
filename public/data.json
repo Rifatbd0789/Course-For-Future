@@ -1,0 +1,65 @@
+[
+  {
+    "courseName": "Introduction to Programming",
+    "creditValue": 6,
+    "priceValue": 199.99,
+    "courseDetails": "This course covers the fundamentals of programming, including variables, loops, and data structures. It is suitable for beginners and provides a solid foundation in computer programming.",
+    "imageLink": "https://i.ibb.co/b2wQN09/Rectangle-2-2.png"
+  },
+  {
+    "courseName": "Data Science for Beginners",
+    "creditValue": 7,
+    "priceValue": 249.99,
+    "courseDetails": "Explore the world of data science with this introductory course. Learn about data analysis, visualization, and basic machine learning techniques.",
+    "imageLink": "https://i.ibb.co/Xk40nvH/Rectangle-3.png"
+  },
+  {
+    "courseName": "Web Development Boot camp",
+    "creditValue": 10,
+    "priceValue": 299.99,
+    "courseDetails": "Become a proficient web developer with this comprehensive boot camp. Cover HTML, CSS, JavaScript, and popular frameworks.",
+    "imageLink": "https://i.ibb.co/4KMMF6K/Rectangle-3-1.png"
+  },
+  {
+    "courseName": "Advanced Machine Learning",
+    "creditValue": 5,
+    "priceValue": 349.99,
+    "courseDetails": "Take your machine learning skills to the next level. Study advanced algorithms, deep learning, and practical applications.",
+    "imageLink": "https://i.ibb.co/SPnJ5yq/Rectangle-2.png"
+  },
+  {
+    "courseName": "Business Finance Essentials",
+    "creditValue": 8,
+    "priceValue": 199.99,
+    "courseDetails": "Learn the fundamentals of business finance, including budgeting, financial analysis, and investment strategies.",
+    "imageLink": "https://i.ibb.co/cX1SQLr/Rectangle-2-6.png"
+  },
+  {
+    "courseName": "Digital Marketing Mastery",
+    "creditValue": 2,
+    "priceValue": 249.99,
+    "courseDetails": "Master the art of digital marketing. Explore SEO, social media marketing, email campaigns, and analytics.",
+    "imageLink": "https://i.ibb.co/Vjb7s4C/Rectangle-2-4.png"
+  },
+  {
+    "courseName": "Artificial Intelligence Ethics",
+    "creditValue": 5,
+    "priceValue": 149.99,
+    "courseDetails": "Understand the ethical implications of AI. Discuss bias, privacy, and responsible AI development.",
+    "imageLink": "https://i.ibb.co/SBTTw2y/Rectangle-2-3.png"
+  },
+  {
+    "courseName": "Graphic Design Fundamentals",
+    "creditValue": 6,
+    "priceValue": 149.99,
+    "courseDetails": "Get started with graphic design. Learn about design principles, software tools, and create your own projects.",
+    "imageLink": "https://i.ibb.co/7vCrH37/Rectangle-2-5.png"
+  },
+  {
+    "courseName": "Business Leadership and Management",
+    "creditValue": 2,
+    "priceValue": 199.99,
+    "courseDetails": "Develop leadership skills and effective management techniques. Excel in your career as a business leader.",
+    "imageLink": "https://i.ibb.co/nCHGgPR/Rectangle-2-1.png"
+  }
+]
