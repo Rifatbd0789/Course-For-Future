@@ -1,8 +1,17 @@
-// import { useState } from "react";
+/* eslint-disable no-global-assign */
+import { useState } from "react";
+import { useEffect } from "react";
 import "./App.css";
 
 function App() {
-  // const [count, setCount] = useState(0);
+  const [info, setinfo] = useState([]);
+
+  useEffect(() => {
+    fetch("./data.json")
+      .then((res) => res.json())
+      .then((data) => setinfo(data));
+  }, []);
+  console.log(info.length);
 
   return (
     <>
@@ -11,7 +20,7 @@ function App() {
       </h1>
       <hr />
       <div className="flex gap-10 justify-center mt-10">
-        <div className="text-4xl">I am Card</div>
+        <div className="text-4xl">Card : {info.length}</div>
         <div className="text-4xl">I am Cart</div>
       </div>
     </>
