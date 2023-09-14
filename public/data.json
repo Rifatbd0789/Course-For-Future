@@ -3,14 +3,14 @@
     "courseName": "Introduction to Programming",
     "creditValue": 6,
     "priceValue": 199.99,
-    "courseDetails": "This course covers the fundamentals of programming, including variables, loops, and data structures. It is suitable for beginners and provides a solid foundation in computer programming.",
+    "courseDetails": "This course covers the fundamentals of programming, including variables, loops, and data structures. It is suitable for beginners.",
     "imageLink": "https://i.ibb.co/b2wQN09/Rectangle-2-2.png"
   },
   {
     "courseName": "Data Science for Beginners",
     "creditValue": 7,
     "priceValue": 249.99,
-    "courseDetails": "Explore the world of data science with this introductory course. Learn about data analysis, visualization, and basic machine learning techniques.",
+    "courseDetails": "Explore the world of data science with this introductory course. Learn about data analysis, visualization, and basic machine learning.",
     "imageLink": "https://i.ibb.co/Xk40nvH/Rectangle-3.png"
   },
   {
@@ -56,7 +56,7 @@
     "imageLink": "https://i.ibb.co/7vCrH37/Rectangle-2-5.png"
   },
   {
-    "courseName": "Business Leadership and Management",
+    "courseName": "Business Management",
     "creditValue": 2,
     "priceValue": 199.99,
     "courseDetails": "Develop leadership skills and effective management techniques. Excel in your career as a business leader.",
