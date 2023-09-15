@@ -4,11 +4,11 @@
 
 > > > A list of some features in this project:-
 
-> when user select some course, user can get to know the total amount of money and hour for this course.
-> user no need to calculate how many course he/she can choose. the website will automatic calculate that.
-> user no need to worry about how many course he/she chosen. because here has serial number, so he/she can easily understand how many course user chosen.
-> user can see the title of every selected course for recheck before purchase.
-> user can read the course details, before select any course. every course has full details of course.
+- when user select some course, user can get to know the total amount of money and hour for this course.
+- user no need to calculate how many course he/she can choose. the website will automatic calculate that.
+- user no need to worry about how many course he/she chosen. because here has serial number, so he/she can easily understand how many course user chosen.
+- user can see the title of every selected course for recheck before purchase.
+- user can read the course details, before select any course. every course has full details of course.
 
 ### The state management in this project.
 
