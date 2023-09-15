@@ -1,9 +1,10 @@
-/* eslint-disable no-global-assign */
 import { useState } from "react";
 import { useEffect } from "react";
 import "./App.css";
 import Card from "./components/Card";
 import Cart from "./components/Cart";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   // Card Showing
@@ -16,19 +17,17 @@ function App() {
   const [remaining, setremaining] = useState(20);
   // Total Price
   const [PrevPrice, setPrice] = useState(0);
-
   const selectedBtn = (selected, creditValue, priceValue) => {
     const newValue = prev + creditValue;
     const newRemaining = remaining - creditValue;
     const newPrice = PrevPrice + priceValue;
-
     const newClicked = [...clicked, selected];
     const dublicate = [...clicked].find((p) => p === selected);
     if (dublicate) {
-      alert("dublicate");
+      toast("you have already selected this course! please choose another one");
     } else {
       if (newValue > 20) {
-        alert("sorry!");
+        toast("sorry! please complete the selected course first");
       } else {
         setclicked(newClicked);
         setPrice(newPrice);
@@ -62,6 +61,9 @@ function App() {
             remaining={remaining}
             PrevPrice={PrevPrice}
           ></Cart>
+          <div className="text-xl">
+            <ToastContainer className={"font-bold"}></ToastContainer>
+          </div>
         </div>
       </div>
     </>

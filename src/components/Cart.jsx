@@ -13,7 +13,7 @@ const Cart = ({ clicked, prev, remaining, PrevPrice }) => {
       <h5 className="font-bold text-xl py-2">Course Name</h5>
       <div className="pb-4">
         {clicked.map((click, idx) => (
-          <Selected key={idx} click={click} prev={prev}></Selected>
+          <Selected key={idx} idx={idx} click={click}></Selected>
         ))}
       </div>
       <hr />

@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
-
-const Selected = ({ click }) => {
+const Selected = ({ click, idx }) => {
   const { courseName } = click;
   //   console.log(courseName);
   return (
     <div className="text-sm rounded-lg">
-      <ol style={{ listStyleType: "upper-roman" }}>
-        <li>{courseName}</li>
+      <ol>
+        <li>
+          {idx + 1}. {courseName}
+        </li>
       </ol>
     </div>
   );
