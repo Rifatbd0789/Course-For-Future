@@ -27,7 +27,9 @@ function App() {
       toast("you have already selected this course! please choose another one");
     } else {
       if (newValue > 20) {
-        toast("sorry! please complete the selected course first");
+        toast(
+          "Sorry!  You have reached maximum Credit Hour! please complete the selected course first!"
+        );
       } else {
         setclicked(newClicked);
         setPrice(newPrice);

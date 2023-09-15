@@ -15,5 +15,6 @@ const Selected = ({ click, idx }) => {
 
 Selected.propTypes = {
   click: PropTypes.object,
+  idx: PropTypes.number,
 };
 export default Selected;
