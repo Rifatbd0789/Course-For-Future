@@ -2,8 +2,7 @@ import PropTypes from "prop-types";
 
 const Selected = ({ click }) => {
   const { courseName } = click;
-  //   const [count, setcount] = useState([0]);
-  //   setcount(count + 1);
+  //   console.log(courseName);
   return (
     <div className="text-sm rounded-lg">
       <ol style={{ listStyleType: "upper-roman" }}>

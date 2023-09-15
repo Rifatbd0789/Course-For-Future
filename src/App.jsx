@@ -6,16 +6,32 @@ import Card from "./components/Card";
 import Cart from "./components/Cart";
 
 function App() {
-  // console.log(info.length);
+  // Card Showing
   const [infos, setinfo] = useState([]);
+  // Course Name Add
   const [clicked, setclicked] = useState([]);
+  // Total Credit Hour
   const [prev, set] = useState(0);
+  // Credit Hour Remaining
+  const [remaining, setremaining] = useState(20);
+  // Total Price
+  const [PrevPrice, setPrice] = useState(0);
 
-  const selectedBtn = (selected, creditValue) => {
-    const newClicked = [...clicked, selected];
-    setclicked(newClicked);
+  const selectedBtn = (selected, creditValue, priceValue) => {
     const newValue = prev + creditValue;
-    set(newValue);
+    const newRemaining = remaining - creditValue;
+    const newPrice = PrevPrice + priceValue;
+
+    const newClicked = [...clicked, selected];
+    const dublicate = [...clicked].find((p) => p === selected);
+    if (dublicate) {
+      console.log("dublicate");
+    } else {
+      setclicked(newClicked);
+      setPrice(newPrice);
+      setremaining(newRemaining);
+      set(newValue);
+    }
   };
 
   useEffect(() => {
@@ -36,7 +52,12 @@ function App() {
           ))}
         </div>
         <div className="text-4xl">
-          <Cart clicked={clicked} prev={prev}></Cart>
+          <Cart
+            clicked={clicked}
+            prev={prev}
+            remaining={remaining}
+            PrevPrice={PrevPrice}
+          ></Cart>
         </div>
       </div>
     </>
