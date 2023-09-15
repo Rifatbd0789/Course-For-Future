@@ -24,11 +24,11 @@ function App() {
     const newClicked = [...clicked, selected];
     const dublicate = [...clicked].find((p) => p === selected);
     if (dublicate) {
-      toast("you have already selected this course! please choose another one");
+      toast("You Have Already Selected This Course! Please Choose Another One");
     } else {
       if (newValue > 20) {
         toast(
-          "Sorry!  You have reached maximum Credit Hour! please complete the selected course first!"
+          "Sorry!  You Have Reached Maximum Credit Hours! Please Check Your Total and Remaining Credit Hours!"
         );
       } else {
         setclicked(newClicked);
