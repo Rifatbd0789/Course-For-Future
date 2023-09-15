@@ -50,13 +50,13 @@ function App() {
         Course Registration
       </h1>
       <hr />
-      <div className="flex justify-between mx-6 mt-10">
-        <div className="grid grid-cols-3 gap-8 mb-16 max-w-4xl">
+      <div className="flex flex-col-reverse md:flex-col lg:flex-row     md:justify-center lg:justify-between mx-6 mt-10">
+        <div className="flex md:grid lg:grid md:grid-cols-2 flex-col lg:grid-cols-3  gap-8 mb-16 justify-center w-full lg:max-w-4xl">
           {infos.map((info, idx) => (
             <Card key={idx} info={info} selectedBtn={selectedBtn}></Card>
           ))}
         </div>
-        <div className="text-4xl">
+        <div className="text-4xl  mb-5">
           <Cart
             clicked={clicked}
             prev={prev}
