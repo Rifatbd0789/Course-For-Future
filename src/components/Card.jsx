@@ -10,11 +10,11 @@ const Card = ({ info, selectedBtn }) => {
       <p className="text-sm font-normal text-clip">{courseDetails}</p>
       <div className="flex justify-between mt-4">
         <h3>Price:{priceValue}</h3>
-        <h3>Credit:{creditValue}</h3>
+        <h3>Credit:{creditValue} hr</h3>
       </div>
       <div className="flex justify-center">
         <button
-          onClick={() => selectedBtn(info)}
+          onClick={() => selectedBtn(info, creditValue)}
           className="bg-blue-600 w-11/12 text-white hover:bg-black rounded-lg"
         >
           Select

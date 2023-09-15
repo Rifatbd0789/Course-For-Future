@@ -9,10 +9,13 @@ function App() {
   // console.log(info.length);
   const [infos, setinfo] = useState([]);
   const [clicked, setclicked] = useState([]);
+  const [prev, set] = useState(0);
 
-  const selectedBtn = (selected) => {
+  const selectedBtn = (selected, creditValue) => {
     const newClicked = [...clicked, selected];
     setclicked(newClicked);
+    const newValue = prev + creditValue;
+    set(newValue);
   };
 
   useEffect(() => {
@@ -28,12 +31,12 @@ function App() {
       <hr />
       <div className="flex justify-between mx-6 mt-10">
         <div className="grid grid-cols-3 gap-8 mb-16 max-w-4xl">
-          {infos.map((info) => (
-            <Card key={info.id} info={info} selectedBtn={selectedBtn}></Card>
+          {infos.map((info, idx) => (
+            <Card key={idx} info={info} selectedBtn={selectedBtn}></Card>
           ))}
         </div>
         <div className="text-4xl">
-          <Cart clicked={clicked}></Cart>
+          <Cart clicked={clicked} prev={prev}></Cart>
         </div>
       </div>
     </>

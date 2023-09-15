@@ -2,17 +2,18 @@ import PropTypes from "prop-types";
 
 const Selected = ({ click }) => {
   const { courseName } = click;
-  console.log(click);
+  //   const [count, setcount] = useState([0]);
+  //   setcount(count + 1);
   return (
     <div className="text-sm rounded-lg">
-      <ul>
+      <ol style={{ listStyleType: "upper-roman" }}>
         <li>{courseName}</li>
-      </ul>
+      </ol>
     </div>
   );
 };
 
 Selected.propTypes = {
-  click: PropTypes.array,
+  click: PropTypes.object,
 };
 export default Selected;

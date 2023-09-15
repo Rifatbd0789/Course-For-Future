@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import Selected from "./Selected";
 
-const Cart = ({ clicked }) => {
+const Cart = ({ clicked, prev }) => {
   //   const { courseName } = ;
   //   console.log(clicked);
   return (
@@ -12,12 +12,12 @@ const Cart = ({ clicked }) => {
       <hr />
       <h5 className="font-bold text-xl py-2">Course Name</h5>
       <div className="pb-4">
-        {clicked.map((click) => (
-          <Selected key={click.id} click={click}></Selected>
+        {clicked.map((click, idx) => (
+          <Selected key={idx} click={click} prev={prev}></Selected>
         ))}
       </div>
       <hr />
-      <h5 className="text-base py-4">Total Credit Hour : </h5>
+      <h5 className="text-base py-4">Total Credit Hour : {prev}</h5>
       <hr />
       <h5 className="text-base py-4">Total Price : </h5>
     </div>
@@ -25,6 +25,7 @@ const Cart = ({ clicked }) => {
 };
 
 Cart.propTypes = {
-  clicked: PropTypes.array,
+  clicked: PropTypes.array.isRequired,
+  click: PropTypes.object,
 };
 export default Cart;
