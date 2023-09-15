@@ -25,12 +25,16 @@ function App() {
     const newClicked = [...clicked, selected];
     const dublicate = [...clicked].find((p) => p === selected);
     if (dublicate) {
-      console.log("dublicate");
+      alert("dublicate");
     } else {
-      setclicked(newClicked);
-      setPrice(newPrice);
-      setremaining(newRemaining);
-      set(newValue);
+      if (newValue > 20) {
+        alert("sorry!");
+      } else {
+        setclicked(newClicked);
+        setPrice(newPrice);
+        setremaining(newRemaining);
+        set(newValue);
+      }
     }
   };
 
